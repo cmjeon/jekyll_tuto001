@@ -1,0 +1,18 @@
+---
+# 머리말은 Jekyll 에게 Liquid 를 처리하라고 지시합니다
+my_number: 5
+title: Home-title
+layout: default
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h1>{{ "Hello World!" | downcase }}</h1>
+    {{ page.my_number }}
+  </body>
+</html>
